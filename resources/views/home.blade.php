@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header"> {{ __('messages.Dashboard') }} </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,9 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
+		    {{ __('messages.Welcome') }}
                 </div>
+                  <img src="/images/logo_censo2022.jpg" alt="Censo 2022 República Argentina">
             </div>
         </div>
     </div>

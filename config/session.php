@@ -28,10 +28,11 @@ return [
     | Here you may specify the number of minutes that you wish the session
     | to be allowed to remain idle before it expires. If you want them
     | to immediately expire on the browser closing, set that option.
-    |
+    | 120 is default 2 min.
+    | 86400 is 1 day
     */
 
-    'lifetime' => env('SESSION_LIFETIME', 120),
+    'lifetime' => env('SESSION_LIFETIME', 1440),
 
     'expire_on_close' => false,
 
@@ -46,7 +47,7 @@ return [
     |
     */
 
-    'encrypt' => false,
+    'encrypt' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -126,7 +127,7 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
-        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+        Str::slug(env('APP_NAME', 'menta-laravel'), '_').'_session'
     ),
 
     /*
@@ -194,6 +195,6 @@ return [
     |
     */
 
-    'same_site' => null,
+    'same_site' => 'strict',
 
 ];

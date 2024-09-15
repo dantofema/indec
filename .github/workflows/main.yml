@@ -1,0 +1,22 @@
+name: Sangria Censo Ronda 2020
+
+on:
+  push:
+    branches:
+        - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actualizar desde repo
+        uses: actions/checkout@v3
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Composer dependencias
+        run: composer install
+
+      - name: Crear paquete
+        run: npm run prod

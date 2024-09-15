@@ -1,0 +1,3 @@
+[submodule "app/developer_docs/segmentacion-core"]
+	path = app/developer_docs/segmentacion-core
+	url = https://github.com/hernan-alperin/Segmentacion-CORE.git

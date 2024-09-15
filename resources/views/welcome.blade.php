@@ -4,11 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Mandarina</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
         <!-- Styles -->
         <style>
             html, body {
@@ -16,12 +15,12 @@
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                height: 80vh;
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height: 80vh;
             }
 
             .flex-center {
@@ -64,6 +63,9 @@
         </style>
     </head>
     <body>
+        <div class="container">
+          @include('flash::message')
+        </div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -81,9 +83,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    INDEC
+                    INDEC<br />
+                <img width="600px" src="images/logo_censo2022.jpg" alt="Censo 2022 República Argentina">
                 </div>
             </div>
+        </div>
+        <div id="copyright" class="text-center justify-content-center"
+        style="display:block"><hr />© 2023 INDEC - Argentina - Geoestadística</div>
         </div>
     </body>
 </html>

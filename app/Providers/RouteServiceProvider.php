@@ -26,6 +26,7 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+	Route::model('listado', App\Listado::class);
     }
 
     /**

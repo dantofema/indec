@@ -1,0 +1,10 @@
+INSERT INTO public.subtipo_vivienda VALUES (1,'CO1','Obrador');
+INSERT INTO public.subtipo_vivienda VALUES (2,'CO2','Colegio internado');
+INSERT INTO public.subtipo_vivienda VALUES (3,'CO3','Cuartel');
+INSERT INTO public.subtipo_vivienda VALUES (4,'CO4','Hogar de adultos mayores');
+INSERT INTO public.subtipo_vivienda VALUES (5,'CO5','Hogar de niñas, niños y adolescentes');
+INSERT INTO public.subtipo_vivienda VALUES (6,'CO6','Hogar de religiosos');
+INSERT INTO public.subtipo_vivienda VALUES (7,'CO7','Hospital');
+INSERT INTO public.subtipo_vivienda VALUES (8,'CO8','Alojamiento turístico');
+INSERT INTO public.subtipo_vivienda VALUES (9,'CO9','Prisión');
+INSERT INTO public.subtipo_vivienda VALUES (10,'CO10','Otros');
